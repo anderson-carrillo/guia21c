@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+* {
+    margin: 0;
+}
+
+html, 
+body {
+    min-width: 590px;
+    height: 100vh;
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+/* BACKGROUND WITH A IMAGE */
+body {
+    background: #161616 url(../images/yt_app.jpg) repeat fixed center;
+    background-size: cover;
+}
+
+
+/* NO STYLE LINKS */
+a {
+    text-decoration: none;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #00000077;
+    color: #ffffff;
+
+    padding: 0 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.navbar img {
+    height: 100px;
+    min-width: 100px;
+    margin: 0;
+    transition: ease 0.75s;
+}
+
+/* TITULO DE PÁGINA */
+h1 {
+    display: flex;
+    color: #ffffff;
+    text-align: right;
+} 
+
+
+/* DATOS */
+.datos {
+    padding: 2rem 0 0 3rem;
+    font-size: 1.2rem;
+    color: #ffffffbb;
+}
+
+
+/* CARDS CONTAINER */
+.card-container {
+    display: grid;
+    padding: 5rem 5rem 9rem 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 0.3fr));
+    grid-gap: 2rem;
+    justify-content: center;
+}
+
+/* STYLES FOR CARDS */
+.card {
+    display: grid;
+    border-radius: 10px;
+    transition-duration: 100ms;
+
+    box-shadow: 0px 0px 10px #161616cc;
+    background-color: #161616cc;
+}
+
+.card:hover {
+    transform: scale(1.025);
+    transition-duration: 100ms;
+}
+
+.card img {
+    min-height: 320px;
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+    background: #ffffff;
+}
+
+.card:nth-child(6) img {
+    min-height: 320px;
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+    background: #161616;
+}
+
+.card__title {
+    font-size: 1.5rem;
+    padding: .5rem;
+    text-align: center;
+    color: #ffffffbb;
+}
+
+/* .card__description {
+    padding: .5rem;
+    line-height: 1.6em;
+} */
+
+.button {
+    display: block;
+    padding: 16px 20px;
+    
+    background-color: #ffffffdd;
+
+    font-weight: bold;
+    color: #ee1616dd;
+
+    text-decoration: none;
+    text-align: center;
+    
+    transition: .3s ease-out;
+
+    border-radius: 0 0 10px 10px;
+}
+
+.button:hover {
+    background-color: #ee1616dd;
+    color: #ffffffdd;
+}
+
+
+/* FOOTER */
+.footer {
+    background-color: #00000077;
+    color: #ffffffdd;
+
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+    /* text-transform: uppercase; */
+
+    width: 100%;
+    padding: 2rem 0;
+    margin-top: 7rem;
+    margin-top: 0;
+}
+
+.footer span {
+    font-weight: 600;
+}
