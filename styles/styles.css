@@ -7,12 +7,12 @@
 
 html, 
 body {
-    min-width: 590px;
+    min-width: 400px;
     height: 100vh;
     font-family: 'JetBrains Mono', 'Fira Code', monospace;
 }
 
-/* BACKGROUND WITH A IMAGE */
+/* BACKGROUND WITH AN IMAGE */
 body {
     background: #161616 url(../images/yt_app.jpg) repeat fixed center;
     background-size: cover;
